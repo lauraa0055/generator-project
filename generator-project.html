@@ -75,48 +75,64 @@
             })
 
             $('#yes').click(function() {
-        window.location.href = "gen-two.html";
+                //window.location.href = "gen-two.html";
+                var font = $('#font').val()
+                $('p').css('font-family', font)
+                $('h4').css('font-family', font)
+                $('h3').css('font-family', font)
+                $('h1').css('font-family', font)
+                $('#q').show(1000)
+                $('#y').show(1000)
+                $('#lol').show(1000)
             })
+
+            $('#lol').click(function() {
+                var color = $('#y').val()
+                $('div').css('background-color', color)
+            })
+
         });
     </script>
 </head>
 
 <body>
-    <h1>Hello There! :D</h1>
-    <h3>Please fill out the information below for randomness</h3>
+    <div>
+        <h1>Hello There! :D</h1>
+        <h3>Please fill out the information below for randomness</h3>
 
-    <!--part1-->
-    <h4>Name:</h4>
-    <input id="name">
+        <!--part1-->
+        <h4>Name:</h4>
+        <input id="name">
 
-    <h4>Age:</h4>
-    <input id="age">
+        <h4>Age:</h4>
+        <input id="age">
 
-    <h4>Fear:</h4>
-    <input type='radio' name='fear1' value='spiders'>Spiders<br>
-    <input type='radio' name='fear1' value='sharks'>Sharks <br>
-    <input type='radio' name='fear1' value='bees'>Bees <br>
-    <input type='radio' name='fear1' value='homework/school'> Homework/School<br>
-    <button>Done</button>
+        <h4>Fear:</h4>
+        <input type='radio' name='fear1' value='spiders'>Spiders<br>
+        <input type='radio' name='fear1' value='sharks'>Sharks <br>
+        <input type='radio' name='fear1' value='bees'>Bees <br>
+        <input type='radio' name='fear1' value='homework/school'> Homework/School<br>
+        <button>Done</button>
 
-    </form>
-    <p id='1'></p>
+        </form>
+        <p id='1'></p>
 
-    <!--part2-->
-    <!--//the button is hidden-->
-    <button style='display:none' id='b2'>Next part</button>
-    <h3 id='pa3' style='display:none'>Pick a Font</h3>
-    <input id='font' style='display:none'>
-    <button style='display:none' id='c'>Change</button>
-    <p id='d' style='display:none'>This font?</p>
-    <button style='display:none' id='yes'>yes</button>
+        <!--part2-->
+        <!--//the button is hidden-->
+        <button style='display:none' id='b2'>Next part</button>
+        <h3 id='pa3' style='display:none'>Pick a Font</h3>
+        <input id='font' style='display:none'>
+        <button style='display:none' id='c'>Change</button>
+        <p id='d' style='display:none'>This font?</p>
+        <button style='display:none' id='yes'>yes</button>
 
-    <!--part3-->
+        <!--part3-->
 
-    
+        <h3 id='q' style='display:none'>Pick Background color</h3>
+        <input id='y' style='display:none'>
+        <button id='lol' style='display:none'>Change Color!</button>
 
-
-
+    </div>
 
 
 
