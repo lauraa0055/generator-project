@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Generator Project</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function() {
+            //  $('#b2').show(100)
+
+            $('button').click(function() {
+                //  $('#b2').show(600)
+
+                var name = $('#name').val()
+                var age = $('#age').val()
+                var fear = $('input[value="spiders"]:checked').val()
+                var fear1 = $('input[value="sharks"]:checked').val()
+                var fear2 = $('input[value="bees"]:checked').val()
+                var fear3 = $('input[value="homework/school"]:checked').val()
+                console.log(name)
+                console.log(age)
+
+
+                // var story = name + age + fear
+                if (fear) {
+                    console.log(fear)
+                    var story = 'Your name is ' + name + ' and your age is ' + age + '. You are afraid of ' + fear + '.'
+                    $('#1').html(story)
+                    $('#b2').show(600)
+
+                }
+
+                if (fear1) {
+                    console.log(fear1)
+                    var story = 'Your name is ' + name + ' and your age is ' + age + '. You are afraid of ' + fear1 + '.'
+                    $('#1').html(story)
+                    $('#b2').show(600)
+                }
+
+
+                if (fear2) {
+                    console.log(fear2)
+                    var story = 'Your name is ' + name + ' and your age is ' + age + '. You are afraid of ' + fear2 + '.'
+                    $('#1').html(story)
+                    $('#b2').show(600)
+                }
+
+
+
+                if (fear3) {
+                    console.log(fear3)
+                    var story = 'Your name is ' + name + ' and your age is ' + age + '. Your fear is ' + fear3 + '.'
+                    $('#1').html(story)
+                    // this shows it
+                    $('#b2').show(600)
+                }
+
+            });
+
+            $('#b2').click(function() {
+                $('#b2').show(600)
+                $('#pa3').show(600)
+                $('#font').show(600)
+                $('#c').show(600)
+
+            })
+
+            $('#c').click(function() {
+                var font = $('#font').val()
+                $('#d').show(10)
+                $('#d').css('font-family', font)
+                $('#yes').show(700)
+            })
+
+            $('#yes').click(function() {
+                $('z').show(200)
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Hello There! :D</h1>
+    <h3>Please fill out the information below for randomness</h3>
+
+    <!--part1-->
+    <h4>Name:</h4>
+    <input id="name">
+
+    <h4>Age:</h4>
+    <input id="age">
+
+    <h4>Fear:</h4>
+    <input type='radio' name='fear1' value='spiders'>Spiders<br>
+    <input type='radio' name='fear1' value='sharks'>Sharks <br>
+    <input type='radio' name='fear1' value='bees'>Bees <br>
+    <input type='radio' name='fear1' value='homework/school'> Homework/School<br>
+    <button>Done</button>
+
+    </form>
+    <p id='1'></p>
+
+    <!--part2-->
+    <!--//the button is hidden-->
+    <button style='display:none' id='b2'>Next part</button>
+    <h3 id='pa3' style='display:none'>Pick a Font</h3>
+    <input id='font' style='display:none'>
+    <button style='display:none' id='c'>Change</button>
+    <p id='d' style='display:none'>This font?</p>
+    <button style='display:none' id='yes'>yes</button>
+
+    <!--part3-->
+
+    <button id='z' style='display:none'>Click for next part</button>
+
+
+
+
+
+
+</body>
+
+</html>
