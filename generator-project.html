@@ -84,10 +84,20 @@
                 $('h4').css('font-family', font)
                 $('h3').css('font-family', font)
                 $('h1').css('font-family', font)
+
+                $('#fv').show(100)
+                $('#ir').show(100)
+                $('#ea').show(100)
+            })
+
+            $('#ea').click(function() {
+                var gh = $('#ir').val()
+                $('div').css('color', gh)
                 $('#q').show(1000)
                 $('#y').show(1000)
                 $('#lol').show(1000)
             })
+
 
             $('#lol').click(function() {
                 var color = $('#y').val()
@@ -109,7 +119,7 @@
                     //console.log('spider thing')
                     $('#0').show(100)
                     $('#t1').hide(100)
-                    
+
                     $('#sk').html('oH MY! At least the spider is cute :3')
                 }
 
@@ -186,6 +196,11 @@
         <button style='display:none' id='c'>Change</button>
         <p id='d' style='display:none'>This font?</p>
         <button style='display:none' id='yes'>yes</button>
+
+
+        <h3 style='display:none' id='fv'>Pick a Font-Color</h3>
+        <input id='ir' style='display:none'>
+        <button id='ea' style="display:none">Color!!!</button>
 
         <!--part3-->
 
