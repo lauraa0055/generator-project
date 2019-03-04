@@ -1,0 +1,21 @@
+div {
+    background: #89cff0;
+    border-radius: 6px;
+    text-align: center;
+    font-family: georgia;
+}
+
+button {
+    width: 150px;
+    height: 150;
+    border-radius: 20px;
+}
+
+input {
+    border-radius: 20px;
+}
+
+#name,#age,#font,#y,#one{
+    box-shadow: 3px 3px 2px 2px black;
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Generator Project</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
     <script>
         $(function() {
             //  $('#b2').show(100)
@@ -89,7 +90,13 @@
             $('#lol').click(function() {
                 var color = $('#y').val()
                 $('div').css('background-color', color)
+                $('#pic').show(100)
+                $('#num').show(200)
+                $('#one').show(300)
+
             })
+
+
 
         });
     </script>
@@ -98,7 +105,7 @@
 <body>
     <div>
         <h1>Hello There! :D</h1>
-        <h3>Please fill out the information below for randomness</h3>
+        <h3 id='pls'>Please fill out the information below for randomness</h3>
 
         <!--part1-->
         <h4>Name:</h4>
@@ -132,7 +139,15 @@
         <input id='y' style='display:none'>
         <button id='lol' style='display:none'>Change Color!</button>
 
+        <!--part3-->
+
+        <h3 id='pic' style='display:none'>1 or 2?</h3>
+        <input type='number' id='one' min='1' max='2' style='display:none'>
+        <button id='num' style='display:none'>:3</button>
+
     </div>
+
+
 
 
 
