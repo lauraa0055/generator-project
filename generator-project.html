@@ -11,6 +11,8 @@
         $(function() {
             //  $('#b2').show(100)
 
+            // var imgs= [spider.jpg, sharks.jpg, bee.jpg, hw.jpg, pups.jpg ]
+
             $('button').click(function() {
                 //  $('#b2').show(600)
 
@@ -96,6 +98,58 @@
 
             })
 
+            $('#num').click(function() {
+                var num = $('#one').val()
+                var fear = $('input[value="spiders"]:checked').val()
+                var fear1 = $('input[value="sharks"]:checked').val()
+                var fear2 = $('input[value="bees"]:checked').val()
+                var fear3 = $('input[value="homework/school"]:checked').val()
+
+                if (num == 1 && fear) {
+                    //console.log('spider thing')
+                    $('#0').show(100)
+                    $('#t1').hide(100)
+                    
+                    $('#sk').html('oH MY! At least the spider is cute :3')
+                }
+
+                else if (num == 1 && fear1) {
+                    //console.log('big bang')
+                    $('#s').show(100)
+                    $('#t1').hide(100)
+                    $('#sk').html('CAREFUL! it is a shark, but a cute one :D')
+
+
+                }
+
+                else if (num == 1 && fear2) {
+                    //console.log('woof')
+                    $('#b').show(100)
+                    $('#t1').hide(100)
+                    $('#sk').html('Hey...at least you dont die when stinging someone')
+
+
+                }
+
+                else if (num == 1 && fear3) {
+                    //console.log('bts')
+                    $('#h').show(100)
+                    $('#t1').hide(100)
+                    $('#sk').html('You got homework :( try not to stress')
+
+
+                }
+
+                else if (num == 2) {
+                    //console.log('yay')
+                    $('#pu').show(100)
+                    $('#t1').hide(100)
+                    $('#sk').html('Yay!! You got a puppy')
+
+
+                }
+
+            })
 
 
         });
@@ -103,7 +157,7 @@
 </head>
 
 <body>
-    <div>
+    <div id='t1'>
         <h1>Hello There! :D</h1>
         <h3 id='pls'>Please fill out the information below for randomness</h3>
 
@@ -139,7 +193,7 @@
         <input id='y' style='display:none'>
         <button id='lol' style='display:none'>Change Color!</button>
 
-        <!--part3-->
+        <!--part4-->
 
         <h3 id='pic' style='display:none'>1 or 2?</h3>
         <input type='number' id='one' min='1' max='2' style='display:none'>
@@ -147,9 +201,17 @@
 
     </div>
 
+    <div>
+        <img style='display:none' id='0' src="images/spider.jpg">
+        <img style='display:none' id='s' src="images/shark.jpg">
+        <img style='display:none' id='b' src="images/bee.jpg">
+        <img style='display:none' id='h' src="images/hw.jpg">
+        <img style='display:none' id='pu' src="images/pups.jpg">
 
 
+        <p id='sk'></p>
 
+    </div>
 
 </body>
 
